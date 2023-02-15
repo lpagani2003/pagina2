@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/templates/CSS/payPage.css">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('PpM04qWp7EU_B3r1A')
+    </script>
+</head>
+
+<body>
+    <section id="s0">
+        <table>
+            <tr>
+                <th class="producto">Producto</th>
+                <th class="cantidad">Cantidad</th>
+                <th class="subtotal">Subtotal</th>
+            </tr>
+        </table>
+        <button id="activarFuncion" style="display: none;">Procesar pedido</button>
+
+        <table id="tbody">
+
+
+        </table>
+        <div id="costo-total">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td id="subtotalProceso"></td>
+                </tr>
+                <tr>
+                    <td>IVA (21%)</td>
+                    <td id="ivaProceso"></td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="totalProceso"></td>
+                </tr>
+            </table>
+        </div>
+        <button id="pagar" onclick="togglePopup('s1');">Pagar</button>
+        <button id="seguir-comprando"><a href="/templates/shop.html">Seguir comprando</a></button>
+    </section>
+    <section id="s1" style="display: none;">
+        <form id="procesar-pago" method="post">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, cupiditate animi alias iusto qui optio
+                distinctio temporibus, harum nobis in quas eveniet non, obcaecati explicabo voluptates iste quibusdam
+                tempora natus!</p>
+            <div class="cliente">
+                <label for="cliente">Cliente :</label>
+                <input type="text" name="persona" id="persona" placeholder="Ingresa Nombre del cliente">
+            </div>
+            <br>
+            <div class="correo">
+                <label for="email">Correo :</label>
+                <input type="email" name="email.id" id="correo" id="email.id">
+            </div>
+            <input type="submit" value="enviar" id="button">
+        </form>
+    </section>
+    <section id="s2">
+
+    </section>
+</body>
+<script src="/templates/js/app/main.js"></script>
+<script src="/templates/js/app/carrito.js"></script>
+<script src="/templates/js/app/paypage.js"></script>
+
+</html>

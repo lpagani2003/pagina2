@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "idt": "zp",
+        "name": "Nike Air Pagani Edition",
+        "type": "Zapatillas",
+        "price": 56000,
+        "image": "/templates/images/poster/nike.webp",
+        "cantidad": 1,
+        "link": "/templates/shop-html/art1.html",
+        "model3d": "/templates/3D/nike_air_zoom_pegasus_36.glb"
+    },
+    {
+        "id": 2,
+        "idt": "gr",
+        "name": "18 orange blue",
+        "type": "Gorra",
+        "price": 5000,
+        "image": "/templates/images/poster/cap2.webp",
+        "cantidad": 1,
+        "link": "/templates/shop-html/art2.html",
+        "model3d": "/templates/3D/cap2.glb"
+    },
+    {
+        "id": 3,
+        "idt": "gr",
+        "name": "Trucker Pagani orange, white and blue",
+        "type": "Gorra",
+        "price": 5000,
+        "image": "/templates/images/poster/cap1.webp",
+        "cantidad": 1,
+        "link": "/templates/shop-html/art3.html",
+        "model3d": "/templates/3D/cap1.glb"
+    },
+    {
+        "id": 4,
+        "idt": "bz",
+        "name": "Polar monocromático",
+        "type": "Buzo",
+        "price": 7000,
+        "image": "/templates/images/poster/fleeceJ.webp",
+        "cantidad": 1,
+        "link": "/templates/shop-html/art4.html",
+        "model3d": "/templates/3D/fleece_jacket.glb"
+    },
+    {
+        "id": 5,
+        "idt": "ot",
+        "name": "700ml de aluminio",
+        "type": "Termo",
+        "price": 10000,
+        "image": "/templates/images/poster/termo.webp",
+        "cantidad": 1,
+        "link": "/templates/shop-html/art5.html",
+        "model3d": "/templates/3D/thermos_-_hydration_bottle_24oz.glb"
+    },
+    {
+        "id": 6,
+        "idt": "cmp",
+        "name": "Eco-cuero edición monocromática",
+        "type": "Campera",
+        "price": 20000,
+        "image": "/templates/images/poster/THJ.webp",
+        "cantidad": 1,
+        "link": "/templates/shop-html/art6.html",
+        "model3d": "/templates/3D/tommy_hilfiger_jacket.glb"
+    },
+    {
+        "id": 7,
+        "idt": "ot",
+        "name": "Concept car Formula",
+        "type": "Modelo a escala 1/32",
+        "price": 10000,
+        "image": "/templates/images/poster/formula.webp",
+        "cantidad": 1,
+        "link": "/templates/shop-html/art7.html",
+        "model3d": "/templates/3D/formula.glb"
+    },
+    {
+        "id": 8,
+        "idt": "cm",
+        "name": "Edición particulas monocromáticas",
+        "type": "Camiseta",
+        "price": 15000,
+        "image": "/templates/images/poster/tshirt3.webp",
+        "cantidad": 1,
+        "link": "/templates/shop-html/art8.html",
+        "model3d": "/templates/3D/camiseta.glb"
+    },
+    {
+        "id": 9,
+        "idt": "cm",
+        "name": "Polo blue white red",
+        "type": "Camiseta",
+        "price": 15000,
+        "image": "/templates/images/poster/Tshirt1.webp",
+        "cantidad": 1,
+        "link": "/templates/shop-html/art9.html",
+        "model3d": "/templates/3D/t-shirt.glb"
+    },
+    {
+        "id": 10,
+        "idt": "ot",
+        "name": "Pantalla configurable",
+        "type": "Volanate replica",
+        "price": 25000,
+        "image": "/templates/images/poster/volante.webp",
+        "cantidad": 1,
+        "link": "/templates/shop-html/art10.html",
+        "model3d": "/templates/3D/race_steering_wheel_-_v12.glb"
+    }
+]

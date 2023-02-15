@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media only screen and (min-width: 1440px) {
+body{
+    background-image: url(/templates/images/src/Sin\ título-1.png);
+    background-position-x: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+#s0{
+    width: 100vw;
+    height: 100vh;
+}
+#s0>h1{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    color: white;
+    font-size: 3vw;
+    font-family: 'pirulen';
+}
+#s0>h3{
+    position: relative;
+    top: 75%;
+    left: 10%;
+    color: white;
+    font-size: 2.5vw;
+    font-family: 'pirulen';
+}
+}
+@media only screen and (max-width: 1440px) {
+    body{
+        background-image: url(/templates/images/src/Texture-Formato-1920x4000-2.png);
+        background-size: 100%;
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    #s0{
+        background-image: url(/templates/images/src/Sin\ título-1.png);
+        background-size: 125%;
+        background-repeat: no-repeat;
+        background-position-y: 50%;
+        background-position-x: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    #s0>h1{
+        
+        position: relative;
+        top: 10%;
+        left: 10%;
+        color: white;
+        font-size: 10vw;
+        font-family: 'pirulen';
+    }
+    #s0>h3{
+        position: relative;
+        top: 75%;
+        left: 10%;
+        color: white;
+        font-size: 5vw;
+        font-family: 'pirulen';
+    }
+}
+@media only screen and (max-width: 600px) {
+    body{
+        background-image: url(/templates/images/src/Texture-Formato-1920x4000-2.png);
+        background-size: 110%;
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    #s0{
+        background-size: 125%;
+        background-repeat: no-repeat;
+        background-position-y: 50%;
+        background-position-x: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    #s0>h1{
+        
+        position: relative;
+        top: 10%;
+        left: 10%;
+        color: white;
+        font-size: 15vw;
+        font-family: 'pirulen';
+    }
+    #s0>h3{
+        position: relative;
+        top: 55%;
+        left: 5%;
+        color: white;
+        font-size: 9vw;
+        width: 100vw;
+        font-family: 'pirulen';
+    }
+
+}

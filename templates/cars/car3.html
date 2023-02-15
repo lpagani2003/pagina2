@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/templates/CSS/carshow.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <div id="gire">
+        Gire el dispositivo para tener una mejor experiencia
+    </div>
+    <section id="s0">
+        <div class="slideshow-container1">
+            <link rel="stylesheet" href="/templates/CSS/apps/slider.css">
+            <div class="mySlides fade">
+                <div class="contentdiv">
+                    <img src=" " style="background-image: url(/templates/images/Iguana/s/HiResPhoto54_1 920-1 080.png);">
+                    <h3>2 variantes</h3>
+                    <h2>Rally</h2>
+                    <h1>Calle</h1>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="contentdiv">
+                    <img src=" " style="background-image: url(/templates/images/Iguana/s/HiResPhoto40_1\ 920-1\ 080.png);">
+                    <h3>Diseño</h3>
+                    <h2>Deportivo</h2>
+                    <h1>Y confort</h1>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="contentdiv">
+                    <img src=" " style="background-image: url(/templates/images/Iguana/s/HiResPhoto48_1\ 920-1\ 080.png);">
+                    <h3 style="color: white;">Interior</h3>
+                    <h2>De primer</h2>
+                    <h1 style="color: white;">Nivel</h1>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <div class="dot" onclick="currentSlide(1)">
+                
+
+            </div>
+            <div class="dot" onclick="currentSlide(2)">
+               
+
+            </div>
+            <div class="dot" onclick="currentSlide(3)">
+                
+            </div>
+        </div>
+
+
+    </section>
+    <section id="s0b">
+        <h3>Iguana</h3>
+    </section>
+    <section id="s1">
+        <div id="galeriaItem">
+            <link rel="stylesheet" href="/templates/CSS/apps/gallery.css">
+            <link rel="stylesheet" href="/templates/CSS/lightbox/lightbox.min.css">
+            <div class="gallery-container" id="galeria">
+
+            </div>
+        </div>
+    </section>
+    <section id="s2">
+        <h1 id="titulo">TIENE TODO LO QUE NECESITÁS PARA UN NUEVO VIAJE</h1>
+        <div id="buttons">
+            <button onclick="togglePopup('diseño')">Diseño</button>
+            <button onclick="togglePopup('performance')">Performance</button>
+            <button onclick="togglePopup('ficha-tecnica')">Ficha Tecnica</button>
+        </div>
+        <article class="s2a" id="diseño" style="display: none;">
+            <div class="container">
+                <div class="imgcont">
+                    <img src="/templates/images/Iguana/rally/HiResPhoto72_1 920-1 080.png" alt="">
+                </div>
+                <div class="texto">
+                    <button id="close" onclick="togglePopdown('diseño')">X</button>
+                    <small>DISEÑO</small>
+                    <h6>Variante rally</h6>
+                    <p>Cuenta con un diseño tipo rally donde lo único que importa es ir rápido. <br> Esta equipado con la mínima seguridad necesaria y es lo mas ligero que se puede hacer.</p>
+                </div>
+            </div>
+        </article>
+        <article class="s2a" id="performance" style="display: none;">
+            <div class="container">
+                <div class="imgcont">
+                    <img src="/templates/images/Iguana/s/HiResPhoto75_1 920-1 080.png" alt="">
+                </div>
+                <div class="texto">
+                    <button id="close" onclick="togglePopdown('performance')">X</button>
+                    <small>Performance</small>
+                    <h6>Tren Motriz</h6>
+                    <p>Motor boxer 6 de cilindros y 24 valvulas equipado con 3 carburadores DCOE y 2 turbos capaz de desarrollar 260 caballos de fuerza.</p>
+                </div>
+            </div>
+        </article>
+        <article class="s2a" id="ficha-tecnica" style="display: none;">
+            <div class="container">
+                <div class="imgcont">
+                    <img src="/templates/images/src/La ficha técnica + Definición, contenido y modelos.jpg" alt="">
+                </div>
+                <div class="texto">
+                    <button id="close" onclick="togglePopdown('ficha-tecnica')">X</button>
+                    <small>Datos</small>
+                    <h6>Ficha tecnica del concepto</h6>
+                    <button id="ficha-tecnica" onclick="togglePopup('s3')">Ver Ficha Tecnica</button>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="s3" style="display: none;">
+        <article class="popup">
+            <h1 id="f-t-h1">Ficha tecnica</h1>
+            <button id="close" onclick="togglePopdown('s3')">X</button>
+            <div id="tarjetas">
+
+            </div>
+        </article>
+    </section>
+    <input value="I" id="selector" style="display: none;">
+
+</body>
+<script src="/templates/js/app/slider.js"></script>
+<script src="/templates/js/app/main.js"></script>
+<script src="/templates/js/lightbox/lightbox-plus-jquery.min.js"></script>
+<script src="/templates/js/lightbox/lightbox.min.js"></script>
+<script src="/templates/js/data/Iguana.js"></script>
+<script src="/templates/js/app/galeria.js"></script>
+<script src="/templates/js/app/carshow.js"></script>
+<script src="/templates/js/data/dataspec.json"></script>
+<script src="/templates/js/app/appspec.js"></script>
+
+</html>

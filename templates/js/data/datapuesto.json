@@ -1,0 +1,27 @@
+[
+    {
+        "id":"ing-hom",
+        "puesto":"Ingeniero de homologaciones",
+        "resumen":"Reportando al gerente de homologación, organizará y garantizará la finalización de los procesos de homologación del vehículo completo y sus componentes aplicando procedimientos y normativasen todos los proyectos y desarrollos",
+        "actividades_principales":"■ Coordinar los procesos de homologación en los mercados  de referencia asignados. <br> ■ Gestionar las relaciones y solicitudes de servicios técnicos e importadores. <br>■ Prever la compilación de solicitudes, documentación recopilación de información y dibujos necesarios para la certificación.<br>■ Planificar y supervisar las pruebas de homologación con los laboratorios y centros de prueba.",
+        "requisitos":"■ Título universitario en ingenieria Mecánica/vehículos <br>■ Inglés fluido (nivel C1) <br>■ Conocimientos del paquete Office <br>■ Experiencia mínima de 3 años en un puesto similar en el sector de la automoción <br>■ Disposición a viajar para apoyar actividades",
+        "habilidades_blandas":"■ Aptitud para el trabajo en equipo y la resolución de problemas <br>■ Capacidad organizativa y de gestion de proyectos <br>■ Capacidad de comunicación y negociación"
+    },
+    {
+        "id":"esp-conf-rend",
+        "puesto":"Especialista en configuración y renderizado",
+        "resumen":"Se dedicará exclusivamente a la concepción, creación y desarrollo de proyectos únicos y de edición limitada y se encargará de la fase de  configuración y represantación gráfica de los proyectos asignados, siguiendo todo el proceso desde la fase de concepto hasta el lanzamiento de las especificaciones de configuración para respaldar la producción",
+        "actividades_principales":"■ Modelado de superficies 3D para la creación de diseños con personalización de elementos del interior y exterior.<br> ■ Procesamiento de representaciones fotorealistas, ambientación de escenas y presentaciones.<br>■ Proponer soluciones de configuración, nuevos materiales y acabados superficiales para los interiores de los proyectos asignados. <br>■ Apoyar el proceso de desarrolllo, respetando procedimiento, requisitos y objetivos del proyecto, informando a su superior sobre el progreso, los problemas críticos y las soluciones propuestas.",
+        "requisitos":"■ Experiencia mínima de 3 años en visualización y modelado 3D<br>■ Inglés fluido (nivel C1) <br>■ Excelente dominio del software de modelado CAS como Autodesk Alias/Rhinoceros <br>■ Excelente dominio del software de visulización 3D Studio/Vray/Corona/Subtance Painter para realizar representaciones fotorealistas <br>■ Conocimiento de los programas Photoshop, Illustrator y Microsoft Office",
+        "habilidades_blandas":"■ Aptitud para el trabajo en equipo y la resolución de problemas <br>■ Capacidad organizativa <br>■ Conocimiento de materiales y atención al detalle"
+    },
+    {
+        "id":"ana-neg-ti",
+        "puesto":"Analista de negocios de TI",
+        "resumen":"Realizará actividades de analisis de mercado y será administrador de sistemas en el área de aplicación.",
+        "actividades_principales":"■ Garantizar el pleno funcionamiento de las aplicaiones empresariales y dar soporte a los usuarios para garantizar la disponibilidad y el correcto funcionamiento de las aplicaciones.<br> ■ Recopilar y analizar nuevos requisitos comerciales.<br>■ Analizar formas de maximizar la expansión hacia nuevos mercados.",
+        "requisitos":"■ Título en ingenieria de gestión o títulos equivalentes<br>■ Inglés fluido (nivel C1) <br>■ Al menos 3 años de experiencia en puestos similares <br>■ Conocimiento de Microsoft Office",
+        "habilidades_blandas":"■ Resolución de problemas con ingenio y autonomía  <br>■ Capacidades lógico-analíticas, predisposición a la colaboración y la comparación(manejo de SQL y SAP) <br>■ Conocimiento de técnicas de gestión de proyectos"
+    }
+
+]

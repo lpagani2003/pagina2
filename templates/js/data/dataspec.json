@@ -1,0 +1,225 @@
+[
+    {
+        "id": "f",
+        "linea": "SEC",
+        "nombre": "Filiere",
+
+        "tipo_de_carroceria": "Station Wagon, 5 puertas",
+        "chasis": "Monocasco de Acero AAR",
+
+
+
+        "n_de_cilindros": "4 en linea",
+        "n_de_valvulas_por_cilindro": "4",
+        "relacion_de_compresion": "9,2:1",
+        "cilindrada": "2002cc",
+        "potencia": "212cv/5800 RPM",
+        "torque": "302Nm/4100 RPM",
+        "emisiones": "Euro 5",
+
+
+        "comando": "Cadena",
+        "arbol_de_levas": "2 en cabeza",
+
+        "sobrealimentacion": "Turbocargado",
+        "sistema_combustible": "Inyección electrónica multipunto",
+        "Ignicion": "Electrónica digital incorporada a la inyección",
+        "combustible": "Nafta 98 octanos",
+
+
+        "caja_de_direccion": "Asistencia eléctrica variable con piñón y cremallera",
+        "diametro_min_giro": "12.2 metros",
+
+
+        "F_sistema": "Hidráulico con sistema ABS y ESC ",
+        "F_delanteros": "Discos ventilados de 400mm de 4 pistones",
+        "F_traseros": "Discos solidos de 300mm de 4 pistones",
+
+
+        "S_delantera": "Independiente tipo McPherson, con brazos oscilantes inferiores, amortiguadores hidráulicos de doble efecto, resortes helicoidales y barra estabilizadora.",
+        "S_trasera": "Independiente tipo Multi-brazo, amortiguadores hidráulicos de doble efecto, resortes helicoidales y barra estabilizadora",
+
+        "traccion": "Delantera",
+        "caja_de_cambios": "Manual de 6 velocidades",
+        "pri": "4.25",
+        "seg": "2.50",
+        "ter": "1.70",
+        "cuar": "1.25",
+        "quin": "0.956",
+        "sex": "0.750",
+        "sep": "",
+        "oct": "",
+        "nov": "",
+        "R": "3.185",
+        "R_diferencial":"4.316",
+        
+        
+        "neu_dim": "250/68 R19",
+
+        
+        "tan_comb": "68 litros",
+        "tara": "1861 kilogramos",
+        "carga": "450 kilogramos",
+        "carga_remolque": "400 kilogramos",
+
+        
+        "batalla": "2.90 metros",
+        "l": "4.67 metros",
+        "w": "1.85 metros/2.03 metros",
+        "h": "1.56 metros",
+        "hf": "251mm",
+        "baul": "476 litros",
+
+        "vmax": "292.4 km/h",
+        "acc": "7.6 segundos"
+    },
+    {
+        "id": "L",
+        "linea": "Remack",
+        "nombre": "Lineas",
+        "tipo_de_carroceria": "Sedan, 4 puertas",
+        "chasis": "Monocasco de Acero AAR",
+
+        "n_de_cilindros": "6 en V a 90°",
+        "n_de_valvulas_por_cilindro": "4",
+        "relacion_de_compresion": "11,5:1",
+        "cilindrada": "3326cc",
+        "potencia": "258cv/6700 RPM",
+        "torque": "321Nm/3400 RPM",
+        "emisiones": "Euro 5",
+
+
+        "comando": "Cadena",
+        "arbol_de_levas": "2 en cabeza",
+
+        "sobrealimentacion": "Aspirado",
+        "sistema_combustible": "Inyección electrónica directa",
+        "Ignicion": "Electrónica digital incorporada a la inyección",
+        "combustible": "Nafta 98 octanos",
+
+
+        "caja_de_direccion": "Asistencia eléctrica variable con piñón y cremallera",
+        "diametro_min_giro": "12 metros",
+
+        "F_sistema": "Hidráulico con sistema ABS y ESC ",
+        "F_delanteros": "Discos ventilados de 375mm de 6 pistones",
+        "F_traseros": "Discos solidos de 275mm de 1 pistones",
+
+        "S_delantera": "Independiente tipo paralelogramo deformable, amortiguadores hidráulicos de doble efecto, resortes helicoidales y barra estabilizadora.",
+        "S_trasera": "Independiente tipo Multi-brazo, amortiguadores hidráulicos de doble efecto, resortes helicoidales y barra estabilizadora",
+
+     
+        "traccion": "AWD All time",
+        "caja_de_cambios": "Automatica Doble embrague de 9 velocidades",
+        "pri": "3.75",
+        "seg": "2.66",
+        "ter": "2.04",
+        "cuar": "1.63",
+        "quin": "1.35",
+        "sex": "1.14",
+        "sep": "0.981",
+        "oct": "0.853",
+        "nov": "0.750",
+        "R": "3.185",
+        "R_diferencial":"4.316",
+        
+        
+        "neu_dim": "225/69 R18",
+
+        
+        "tan_comb": "60 litros",
+        "tara": "1901 kilogramos",
+        "carga": "400 kilogramos",
+        "carga_remolque": "450 kilogramos",
+
+        
+        "batalla": "2.89 metros",
+        "l": "4.81 metros",
+        "w": "1.85 metros/2.03 metros",
+        "h": "1.45 metros",
+        "hf": "200mm",
+        "baul": "456 litros",
+
+    
+        "vmax": "328 km/h",
+        "acc": "7.0 segundos"
+    },{
+        "id": "I",
+        "linea": "70s",
+        "nombre": "Iguana",
+   
+        "tipo_de_carroceria": "Coupe biplaza, 2 puertas",
+        "chasis": "Monocasco de Acero inoxidable",
+
+
+    
+
+        "n_de_cilindros": "6 boxer",
+        "n_de_valvulas_por_cilindro": "4",
+        "relacion_de_compresion": "9,2:1",
+        "cilindrada": "2005cc",
+        "potencia": "262cv/6700 RPM",
+        "torque": "309Nm/5100 RPM",
+        "emisiones": "",
+
+
+        "comando": "Cadena",
+        "arbol_de_levas": "2 en cabeza",
+
+     
+        "sobrealimentacion": "Bi-turbo paralelo",
+        "sistema_combustible": "3 carburadores DCOE",
+        "Ignicion": "Por bobina y distribuidor",
+        "combustible": "Nafta 95 octanos",
+
+     
+        "caja_de_direccion": "Piñón y cremallera",
+        "diametro_min_giro": "9.5 metros",
+
+     
+        "F_sistema": "Hidráulico",
+        "F_delanteros": "Discos solidos de 220mm de 2 pistones",
+        "F_traseros": "Discos solidos de 220mm de 1 pistones",
+
+      
+        "S_delantera": "Independiente tipo paralelogramo deformable, amortiguadores hidráulicos, resortes helicoidales y barra estabilizadora.",
+        "S_trasera": "Independiente tipo paralelogramo deformable, amortiguadores hidráulicos, resortes helicoidales y barra estabilizadora",
+
+       
+        "traccion": "Trasera",
+        "caja_de_cambios": "Manual de 5 velocidades",
+        "pri": "2.21",
+        "seg": "1.52",
+        "ter": "1.15",
+        "cuar": "0.911",
+        "quin": "0.650",
+        "sex": "",
+        "sep": "",
+        "oct": "",
+        "nov": "",
+        "R": "3.185",
+        "R_diferencial":"3.316",
+        
+        
+        "neu_dim": "215/65 R15 atras, 150/65 R15 adelante",
+
+        
+        "tan_comb": "50 litros",
+        "tara": "841 kilogramos",
+        "carga": "100 kilogramos",
+        "carga_remolque": "0 kilogramos",
+
+        
+        "batalla": "2.33 metros",
+        "l": "4.09 metros",
+        "w": "1.71 metros/1.85 metros",
+        "h": "1.33 metros",
+        "hf": "233mm",
+        "baul": "100 litros",
+
+        
+        "vmax": "270.4 km/h",
+        "acc": "6.9 segundos"
+    }
+    
+]

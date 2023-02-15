@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/templates/CSS/carshow.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <div id="gire">
+        Gire el dispositivo para tener una mejor experiencia
+    </div>
+    <section id="s0">
+        <div class="slideshow-container1">
+            <link rel="stylesheet" href="/templates/CSS/apps/slider.css">
+            <div class="mySlides fade">
+                <div class="contentdiv">
+                    <img src=" " style="background-image: url(/templates/images/Lineas/HiResPhoto77_1\ 920-1\ 080.png);">
+                    <h3>Motor</h3>
+                    <h2>V6</h2>
+                    <h1>Y Traccion integral</h1>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="contentdiv">
+                    <img src=" " style="background-image: url(/templates/images/Lineas/HiResPhoto78_1\ 920-1\ 080.png);">
+                    <h3>Diseño</h3>
+                    <h2>Deportivo</h2>
+                    <h1>Y confort</h1>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="contentdiv">
+                    <img src=" " style="background-image: url(/templates/images/Lineas/HiResPhoto83_1\ 920-1\ 080.png);">
+                    <h3 style="color: white;">Interior</h3>
+                    <h2>De primer</h2>
+                    <h1 style="color: white;">Nivel</h1>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <div class="dot" onclick="currentSlide(1)">
+                <img src="" alt="">
+                <h4></h4>
+                <h5></h5>
+
+            </div>
+            <div class="dot" onclick="currentSlide(2)">
+                <img src="" alt="">
+                <h4></h4>
+                <h5></h5>
+
+            </div>
+            <div class="dot" onclick="currentSlide(3)">
+                <img src="" alt="">
+                <h4></h4>
+                <h5></h5>
+
+            </div>
+        </div>
+
+
+    </section>
+    <section id="s0b">
+        <h3>Lineas</h3>
+    </section>
+
+    <section id="s1">
+        <div id="galeriaItem">
+            <link rel="stylesheet" href="/templates/CSS/apps/gallery.css">
+            <link rel="stylesheet" href="/templates/CSS/lightbox/lightbox.min.css">
+            <div class="gallery-container" id="galeria">
+
+            </div>
+        </div>
+    </section>
+    <section id="s2">
+        <h1 id="titulo">TIENE TODO LO QUE NECESITÁS PARA UN NUEVO VIAJE</h1>
+        <div id="buttons">
+            <button onclick="togglePopup('diseño')">Diseño</button>
+            <button onclick="togglePopup('performance')">Performance</button>
+            <button onclick="togglePopup('ficha-tecnica')">Ficha Tecnica</button>
+        </div>
+        <article class="s2a" id="diseño" style="display: none;">
+            <div class="container">
+                <div class="imgcont">
+                    <img src="/templates/images/Lineas/HiResPhoto90_1 920-1 080.png" alt="">
+                </div>
+                <div class="texto">
+                    <button id="close" onclick="togglePopdown('diseño')">X</button>
+                    <small>DISEÑO</small>
+                    <h6>Alto desempeño lumínico</h6>
+                    <p>diseño innovador y full led.</p>
+                </div>
+            </div>
+        </article>
+        <article class="s2a" id="performance" style="display: none;">
+            <div class="container">
+                <div class="imgcont">
+                    <img src="/templates/images/Lineas/HiResPhoto77_1 920-1 080.png" alt="">
+                </div>
+                <div class="texto">
+                    <button id="close" onclick="togglePopdown('performance')">X</button>
+                    <small>Performance</small>
+                    <h6>Tren Motriz</h6>
+                    <p>Un motor v6 de 3.3 litros acompañado de una caja automática de 9 velocidades y de tracción integral full-time</p>
+                </div>
+            </div>
+        </article>
+        <article class="s2a" id="ficha-tecnica" style="display: none;">
+            <div class="container">
+                <div class="imgcont">
+                    <img src="/templates/images/src/La ficha técnica + Definición, contenido y modelos.jpg" alt="">
+                </div>
+                <div class="texto">
+                    <button id="close" onclick="togglePopdown('ficha-tecnica')">X</button>
+                    <small>Datos</small>
+                    <h6>Ficha tecnica del concepto</h6>
+                    <button id="ficha-tecnica" onclick="togglePopup('s3')">Ver Ficha Tecnica</button>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="s3" style="display: none;">
+        <article class="popup">
+            <h1 id="f-t-h1">Ficha tecnica</h1>
+            <button id="close" onclick="togglePopdown('s3')">X</button>
+            <div id="tarjetas">
+
+            </div>
+        </article>
+    </section>
+    <input value="L" id="selector" style="display: none;">
+</body>
+<script src="/templates/js/app/slider.js"></script>
+<script src="/templates/js/app/main.js"></script>
+<script src="/templates/js/lightbox/lightbox-plus-jquery.min.js"></script>
+<script src="/templates/js/lightbox/lightbox.min.js"></script>
+<script src="/templates/js/data/Lineas.js"></script>
+<script src="/templates/js/app/galeria.js"></script>
+<script src="/templates/js/app/carshow.js"></script>
+<script src="/templates/js/data/dataspec.json"></script>
+<script src="/templates/js/app/appspec.js"></script>
+
+</html>

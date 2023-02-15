@@ -1,0 +1,729 @@
+@media only screen and (min-width: 1440px) {
+  #menuToggle1 {
+    display: block;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle1 input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  /*
+ * Just a quick hamburger
+ */
+  #menuToggle1 span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      opacity 0.55s ease;
+  }
+
+  #menuToggle1 span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle1 span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+  #menuToggle1 input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  /*
+ * But let's hide the middle one.
+ */
+  #menuToggle1 input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  /*
+ * Ohyeah and the last one should go the other direction
+ */
+  #menuToggle1 input:checked~span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+  #menu1 {
+    position: fixed;
+    width: 45vw;
+    margin: -100px 0 0 0;
+    padding-top: 125px;
+    right: -100px;
+    height: 110vh;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  }
+
+  /*
+ * And let's fade it in from the left
+ */
+  #menuToggle1 input:checked~ul {
+    transform: scale(1.0, 1.0);
+    opacity: 1;
+  }
+
+  h6 {
+    position: absolute;
+    bottom: 8%;
+    padding-left: 10px;
+    font-family: 'pirulen';
+    font-size: 0.75vw;
+  }
+
+  #total {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 11vh;
+    border-top: 5px solid red;
+  }
+
+  #ptotal {
+    padding-left: 10px;
+    font-family: 'pirulen';
+  }
+
+  #precioTotal {
+    position: relative;
+    font-family: 'pirulen';
+    top: -30%;
+    left: 65%;
+  }
+
+  #scrol {
+    height: 75%;
+    overflow-y: scroll;
+  }
+
+  .modal-body {
+    width: 85%;
+    border-collapse: collapse;
+    text-align: left;
+
+  }
+
+  #first-row {
+    background-color: black;
+    color: white;
+    width: 110%;
+    font-family: 'pirulen';
+    position: relative;
+  }
+
+  #first-row th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+  }
+
+  #first-row th:first-child {
+    width: 20vw;
+  }
+
+  #info-producto {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'pirulen';
+    font-size: 0.7vw;
+    width: 100%;
+  }
+
+  #info-producto p {
+    width: 80%;
+  }
+
+  #info-producto a {
+    color: red;
+  }
+
+  .img-carrito {
+    height: 70px;
+  }
+
+  .numeros {
+    font-family: 'pirulen';
+    font-size: 0.8vw;
+    margin: 0 auto;
+    padding-left: 25px;
+  }
+
+  #buttons {
+    position: absolute;
+    bottom: 10%;
+    right: 25%;
+    align-items: center;
+    display: flex;
+  }
+
+  #buttons button {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'pirulen';
+    position: relative;
+    background-color: white;
+    color: black;
+    border: 2px solid #ff1100;
+  }
+
+  #buttons button:hover {
+    background-color: #ff1100;
+    color: white;
+  }
+
+  .no-hay-nada {
+    font-size: 2vw;
+    font-family: 'pirulen';
+    margin: auto;
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 1439px) {
+  #menuToggle1 {
+    display: block;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle1 input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  /*
+ * Just a quick hamburger
+ */
+  #menuToggle1 span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      opacity 0.55s ease;
+  }
+
+  #menuToggle1 span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle1 span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+  #menuToggle1 input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  /*
+ * But let's hide the middle one.
+ */
+  #menuToggle1 input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  /*
+ * Ohyeah and the last one should go the other direction
+ */
+  #menuToggle1 input:checked~span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+  #menu1 {
+    position: fixed;
+    width: 80vw;
+    margin: -100px 0 0 0;
+    padding-top: 125px;
+    right: -100px;
+    height: 110vh;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  }
+
+  /*
+ * And let's fade it in from the left
+ */
+  #menuToggle1 input:checked~ul {
+    transform: scale(1.0, 1.0);
+    opacity: 1;
+  }
+
+  h6 {
+    position: absolute;
+    bottom: 8%;
+    padding-left: 10px;
+    font-family: 'pirulen';
+    font-size: 0.75vw;
+  }
+
+  #total {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 11vh;
+    border-top: 5px solid red;
+  }
+
+  #ptotal {
+    padding-left: 10px;
+    font-family: 'pirulen';
+  }
+
+  #precioTotal {
+    position: relative;
+    font-family: 'pirulen';
+    top: -30%;
+    left: 65%;
+  }
+
+  #scrol {
+    height: 75%;
+    overflow-y: scroll;
+  }
+
+  .modal-body {
+    width: 85%;
+    border-collapse: collapse;
+    text-align: left;
+
+  }
+
+  #first-row {
+    background-color: black;
+    color: white;
+    width: 110%;
+    font-family: 'pirulen';
+    position: relative;
+  }
+
+  #first-row th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+  }
+
+  #first-row th:first-child {
+    width: 0vw;
+  }
+
+  #info-producto {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'pirulen';
+    font-size: 2vw;
+    width: 100%;
+    border-bottom: 2px solid black;
+  }
+
+  #info-producto p {
+    width: 100%;
+  }
+
+  #info-producto a {
+    color: red;
+  }
+
+  .img-carrito {
+    height: 70px;
+  }
+
+  .numeros {
+    font-family: 'pirulen';
+    font-size: 0.8vw;
+    margin: 0 auto;
+    padding-left: 25px;
+    font-size: 2vw;
+  }
+
+  #buttons {
+    position: absolute;
+    bottom: 10%;
+    right: 25%;
+    align-items: center;
+    display: flex;
+  }
+
+  #buttons button {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'pirulen';
+    position: relative;
+    background-color: white;
+    color: black;
+    border: 2px solid #ff1100;
+  }
+
+  #buttons button:hover {
+    background-color: #ff1100;
+    color: white;
+  }
+
+  .no-hay-nada {
+    font-size: 2vw;
+    font-family: 'pirulen';
+    margin: auto;
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  #menuToggle1 {
+    display: block;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle1 input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  /*
+ * Just a quick hamburger
+ */
+  #menuToggle1 span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      opacity 0.55s ease;
+  }
+
+  #menuToggle1 span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle1 span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+  #menuToggle1 input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  /*
+ * But let's hide the middle one.
+ */
+  #menuToggle1 input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  /*
+ * Ohyeah and the last one should go the other direction
+ */
+  #menuToggle1 input:checked~span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+  #menu1 {
+    position: fixed;
+    width: 100%;
+    margin: -100px 0 0 0;
+    padding-top: 125px;
+    left: 0;
+    height: 110vh;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /*tostopflickeringoftextinsafari*/
+    transform-origin: 0% 0%;
+    transform: translate(10%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    -webkit-transform: translate(100%, 0);
+    -moz-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    -o-transform: translate(100%, 0);
+  }
+
+  /*
+ * And let's fade it in from the left
+ */
+  #menuToggle1 input:checked~ul {
+    transform: scale(1.0, 1.0);
+    opacity: 1;
+  }
+
+  h6 {
+    position: absolute;
+    bottom: 50%;
+    padding-left: 10px;
+    font-family: 'pirulen';
+    font-size: 0.75vw;
+    display: none;
+  }
+
+  #total {
+    width: 100%;
+    height: 15vh;
+    position: absolute;
+    bottom: 11vh;
+    border-top: 5px solid red;
+  }
+
+  #ptotal {
+    padding-left: 10px;
+    font-family: 'pirulen';
+  }
+
+  #precioTotal {
+    position: relative;
+    font-family: 'pirulen';
+    top: -3vh;
+    left: 65%;
+  }
+
+  #scrol {
+    height: 65%;
+    overflow-y: scroll;
+  }
+
+  .modal-body {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+
+  }
+
+  #first-row {
+    background-color: black;
+    color: white;
+    width: 110%;
+    font-family: 'pirulen';
+    position: relative;
+  }
+
+  #first-row th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+  }
+
+  #first-row th:first-child {
+    width: 0vw;
+  }
+
+  #info-producto {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'pirulen';
+    font-size: 4vw;
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding-left: 10px;
+  }
+
+  #info-producto p {
+    width: 100%;
+  }
+
+  #info-producto a {
+    color: red;
+  }
+
+  .img-carrito {
+    height: 70px;
+  }
+
+  .numeros {
+    font-family: 'pirulen';
+    font-size: 0.8vw;
+    font-size: 3vw;
+  }
+
+  #buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  #buttons button {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'pirulen';
+    position: relative;
+    top: 1vh;
+    background-color: white;
+    color: black;
+    border: 2px solid #ff1100;
+    width: 50%;
+  }
+
+  #buttons button:hover {
+    background-color: #ff1100;
+    color: white;
+  }
+
+  .no-hay-nada {
+    font-size: 3vh;
+    font-family: 'pirulen';
+    margin: auto;
+    padding-left: 15px;
+  }
+}

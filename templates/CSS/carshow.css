@@ -1,0 +1,706 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        background-color: rgb(19, 25, 31);
+        overflow-x: hidden;
+        font-family: 'pirulen';
+    }
+
+    .slideshow-container1 {
+        width: 100vw;
+        height: 90vh;
+        position: relative;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .contentdiv img {
+        height: 90vh;
+        width: 100%;
+        background-size: 100%;
+
+    }
+
+    .contentdiv h3,
+    h2,
+    h1 {
+        position: relative;
+        top: -85vh;
+        left: 14vw;
+        font-size: 1.7vw;
+    }
+
+    .contentdiv h2 {
+        color: #ff0000;
+    }
+    #s0b{
+        background-color: grey;
+        width: 100vw;
+        height: 10vh;
+        text-align: center;
+    }
+    #s0b h3{
+        margin: auto;
+        padding: 25px;
+        font-size: 2vw;
+    }
+    
+
+    #s2 {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    #s2 h1 {
+        color: white;
+        position: relative;
+        top: -8vh;
+        left: -0.5vw;
+        font-size: 3vw;
+        font-family: 'pirulen';
+        text-align: center;
+    }
+
+    #buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #buttons button {
+        background-color: #ff0000;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-family: 'pirulen';
+    }
+
+    .s2a {
+        width: 100vw;
+        position: absolute;
+        background-color: grey;
+    }
+
+    .s2a .container {
+        width: 1310px;
+        height: 395px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container img {
+        height: 390px;
+        background-color: #ff0000;
+        margin-right: 32px;
+    }
+
+    .container .texto {
+        position: relative;
+        top: 10%;
+    }
+
+    .texto small {
+        color: white;
+        font-size: 1vw;
+    }
+
+    .texto h6 {
+        color: #a10909;
+        font-size: 1.5vw;
+    }
+
+    .texto p {
+        width: 20vw;
+        height: 20vh;
+        text-align: justify;
+    }
+
+    .texto #ficha-tecnica {
+        position: relative;
+        top: 15%;
+        left: 35%;
+        background-color: #ff0000;
+        border: none;
+        color: white;
+        padding: 6px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-family: 'pirulen';
+    }
+
+    #s3 {
+        height: 15vh;
+    }
+
+    .popup {
+        position: absolute;
+        top: 180vh;
+        left: 15vw;
+        width: 70vw;
+        height: 80vh;
+        margin: auto;
+        background-color: aliceblue;
+        overflow-y: scroll;
+    }
+
+    #close {
+        position: sticky;
+        top: -0.7%;
+        left: 96.4%;
+        background-color: #ff0000;
+        border: none;
+        color: white;
+        padding: 6px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-family: 'pirulen';
+    }
+
+    #tarjetas table {
+        border-collapse: collapse;
+        margin-left: 10px;
+    }
+
+    #tarjetas table,
+    tr,
+    td {
+        border: 2px solid black;
+
+    }
+
+    #tarjetas table td:last-child {
+        padding-left: 15px;
+        text-align: justify;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 15px;
+    }
+
+    #tarjetas table td:first-child {
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 15px;
+    }
+
+    #tarjetas table th {
+        background-color: #ff0000;
+        color: white;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    #f-t-h1 {
+        position: absolute;
+        top: 1%;
+        left: 40%;
+        font-size: 1.3vw;
+    }
+
+    #titulo {
+        margin-top: 45px;
+    }
+}
+@media only screen and (max-width: 1439px) {
+    body {
+        background-color: rgb(19, 25, 31);
+        overflow-x: hidden;
+        font-family: 'pirulen';
+    }
+
+    .slideshow-container1 {
+        width: 100vw;
+        height: 50vw;
+        position: relative;
+        margin: auto;
+        
+    }
+
+    .contentdiv img {
+        height: 50vw;
+        width: 100%;
+        background-size: 100%;
+
+    }
+
+    .contentdiv h3,h2,h1 {
+        position: relative;
+        top: -40vh;
+        left: 5%;
+    }
+
+    .contentdiv h2 {
+        color: #ff0000;
+    }
+    #s0b{
+        background-color: grey;
+        width: 100vw;
+        text-align: center;
+    }
+    #s0b h3{
+        margin: auto;
+        padding: 25px;
+        font-size: 4vw;
+    }
+    
+    
+    #s2 {
+        width: 100vw;
+        height: 60vh;
+    }
+
+    #s2 h1 {
+        color: white;
+        position: relative;
+        top: -5vh;
+        left: -0.5vw;
+        font-size: 2vw;
+        font-family: 'pirulen';
+        text-align: center;
+    }
+
+    #buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #buttons button {
+        background-color: #ff0000;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-family: 'pirulen';
+    }
+
+    .s2a {
+        width: 100vw;
+        position: absolute;
+        background-color: grey;
+    }
+
+    .s2a .container {
+        width: 100vw;
+        height: 395px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .imgcont{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .container img {
+        width: 50vw;
+        margin-right: 32px;
+    }
+
+    .container .texto {
+        position: relative;
+    }
+
+    .texto small {
+        color: white;
+        font-size: 3vw;
+        position: relative;
+        top: 10%;
+        left: 5%;
+    }
+
+    .texto h6 {
+        color: #a10909;
+        font-size: 3vw;
+        position: relative;
+        top: 10%;
+        left: 5%;
+    }
+
+    .texto p {
+        width: 90%;
+        height: 50%;
+        text-align: justify;
+        position: relative;
+        top: 15%;
+        left: 5%;
+        font-size: 2vw;
+    }
+
+    .texto #ficha-tecnica {
+        position: relative;
+        top: 15%;
+        left: 5%;
+        background-color: #ff0000;
+        border: none;
+        color: white;
+        padding: 6px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-family: 'pirulen';
+    }
+
+    #s3 {
+        height: 15vh;
+    }
+
+    .popup {
+        position: relative;
+        top: -60vh;
+        width: 90vw;
+        height: 90vh;
+        margin: auto;
+        background-color: aliceblue;
+        overflow-y: scroll;
+    }
+
+    #close {
+        position: sticky;
+        top: -0.7%;
+        left: 96.4%;
+        background-color: #ff0000;
+        border: none;
+        color: white;
+        padding: 6px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-family: 'pirulen';
+    }
+
+    #tarjetas table {
+        border-collapse: collapse;
+        margin-left: 10px;
+    }
+
+    #tarjetas table,
+    tr,
+    td {
+        border: 2px solid black;
+
+    }
+
+    #tarjetas table td:last-child {
+        padding-left: 15px;
+        text-align: justify;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 15px;
+    }
+
+    #tarjetas table td:first-child {
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 15px;
+    }
+
+    #tarjetas table th {
+        background-color: #ff0000;
+        color: white;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    #f-t-h1 {
+        position: absolute;
+        top: 1%;
+        left: 40%;
+        font-size: 2vw;
+    }
+
+    #titulo {
+        margin-top: 45px;
+    }
+}
+@media only screen and (max-width: 760px) {
+    body {
+        background-color: rgb(19, 25, 31);
+        overflow-x: hidden;
+        font-family: 'pirulen';
+        
+    }
+    #gire{
+        color: white;
+        text-align: center;
+    }
+    #s0{
+        display: none;
+    }
+    .slideshow-container1 {
+        width: 100vw;
+        height: 50vw;
+        position: relative;
+        margin: auto;
+        display: none;
+    }
+
+    .contentdiv img {
+        height: 50vw;
+        width: 100%;
+        background-size: 100%;
+        display: none;
+    }
+
+    .contentdiv h3,h2,h1 {
+        position: relative;
+        top: -22vh;
+        left: 5%;
+        display: none;
+    }
+
+    .contentdiv h2 {
+        color: #ff0000;
+        display: none;
+    }
+    #s0b{
+        background-color: grey;
+        width: 100vw;
+        height: 10vh;
+        text-align: center;
+        display: none;
+    }
+    #s0b h3{
+        margin: auto;
+        padding: 25px;
+        font-size: 4vw;
+        display: none;
+    }
+    
+    #galeriaItem {
+        height: 80vh;
+        display: none;
+    }
+
+    #galeria {
+        height: 40vh;
+        display: none;
+    }
+
+    #s2 {
+        width: 100vw;
+        height: 60vh;
+        display: none;
+    }
+
+    #s2 h1 {
+        color: white;
+        position: relative;
+        top: -5vh;
+        left: -0.5vw;
+        font-size: 2vw;
+        font-family: 'pirulen';
+        text-align: center;
+        
+    }
+
+    #buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #buttons button {
+        background-color: #ff0000;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-family: 'pirulen';
+    }
+
+    .s2a {
+        width: 100vw;
+        position: absolute;
+        background-color: grey;
+    }
+
+    .s2a .container {
+        width: 100vw;
+        height: 395px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .imgcont{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .container img {
+        width: 50vw;
+        margin-right: 32px;
+    }
+
+    .container .texto {
+        position: relative;
+    }
+
+    .texto small {
+        color: white;
+        font-size: 3vw;
+        position: relative;
+        top: 10%;
+        left: 5%;
+    }
+
+    .texto h6 {
+        color: #a10909;
+        font-size: 3vw;
+        position: relative;
+        top: 10%;
+        left: 5%;
+    }
+
+    .texto p {
+        width: 90%;
+        height: 50%;
+        text-align: justify;
+        position: relative;
+        top: 15%;
+        left: 5%;
+        font-size: 2vw;
+    }
+
+    .texto #ficha-tecnica {
+        position: relative;
+        top: 15%;
+        left: 5%;
+        background-color: #ff0000;
+        border: none;
+        color: white;
+        padding: 6px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-family: 'pirulen';
+    }
+
+    #s3 {
+        height: 15vh;
+    }
+
+    .popup {
+        position: absolute;
+        top: 180vh;
+        left: 15vw;
+        width: 70vw;
+        height: 80vh;
+        margin: auto;
+        background-color: aliceblue;
+        overflow-y: scroll;
+    }
+
+    #close {
+        position: sticky;
+        top: -0.7%;
+        left: 96.4%;
+        background-color: #ff0000;
+        border: none;
+        color: white;
+        padding: 6px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-family: 'pirulen';
+    }
+
+    #tarjetas table {
+        border-collapse: collapse;
+        margin-left: 10px;
+    }
+
+    #tarjetas table,
+    tr,
+    td {
+        border: 2px solid black;
+
+    }
+
+    #tarjetas table td:last-child {
+        padding-left: 15px;
+        text-align: justify;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 15px;
+    }
+
+    #tarjetas table td:first-child {
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 15px;
+    }
+
+    #tarjetas table th {
+        background-color: #ff0000;
+        color: white;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    #f-t-h1 {
+        position: absolute;
+        top: 1%;
+        left: 40%;
+        font-size: 1.3vw;
+    }
+
+    #titulo {
+        margin-top: 45px;
+    }
+}

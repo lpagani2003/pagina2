@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagani DI</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="/templates/CSS/RRHH.css">
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <section id="s1">
+        <H1 id="cs">CONSULTA LAS POSICIONES ABIERTAS O ENVÍANOS TU CANDIDATURA ESPONTÁNEA</H1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <input type="radio" id="ppa" name="eleccion" value="Puestos profesionales abiertos" onclick=before()>
+                <label for="ppa">Puestos profesionales abiertos</label>
+            </div>
+            <div class="grid-item" id="der">
+                <input type="radio" id="op" name="eleccion" value="Oportunidades de pasantias" onclick=after()>
+                <label for="op">Oportunidades de pasantias</label>
+            </div>
+        </div>
+    </section>
+    <section id="s2" style="display: none;">
+        <div class="grid-container">
+            <div class="grid-item" id="s2b">
+                <input class="form-check-input" type="checkbox" value="area comercial" id="acp" onclick=AC();>
+                <label class="form-check-label" for="acp">
+                    Área comercial
+                </label>
+            </div>
+            <div class="grid-item" id="s2b">
+                <input class="form-check-input" type="checkbox" value="area de marketing" id="amp" onclick=AM();>
+                <label class="form-check-label" for="amp">
+                    Área técnica
+                </label>
+            </div>
+            <div class="grid-item" id="s2b">
+                <input class="form-check-input" type="checkbox" value="area de diseño" id="adp" onclick=AD();>
+                <label class="form-check-label" for="adp">
+                    Área de diseño
+                </label>
+            </div>
+            <div class="grid-item" id="s2b">
+                <input class="form-check-input" type="checkbox" value="area de i+d" id="aidp" onclick=AID();>
+                <label class="form-check-label" for="aidp">
+                    Área de I+D
+                </label>
+            </div>
+        </div>
+    </section>
+    <section id="s3" style="display: none;">
+        <div class="flex-container">
+            <div class="item item-1" style="display: none; " id="ac">
+                <h2 class="TT">Area Comercial</h2>
+                <h3>Sin vacantes disponibles</h2>
+            </div>
+            <div class="item item-2" style="display: none;" id="am">
+                <h2 class="TT">Ingeniero de Homologaciones</h2>
+                <div>
+                    <button onclick="postulante('ing-hom')">Ver más</button>
+                </div>
+            </div>
+            <div class="item item-3" style="display: none;" id="ad">
+                <h2 class="TT">Especialista en configuración y renderizado</h2>
+                <div>
+                    <button onclick="postulante('esp-conf-rend')">Ver más</button>
+                </div>
+            </div>
+            <div class="item item-4" style="display: none;" id="aid">
+                <h2 class="TT">Analista de negocios de TI</h2>
+                <div>
+                    <button onclick="postulante('ana-neg-ti')">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="s4" style="display: none;">
+        <form class="grid-container">
+            <div class="grid-item">
+                <label for="txtNombre">Nombre</label>
+                <input type="text" class="form-control" name="txtNombre" id="txtNombre"><br>
+            </div>
+            <div class="grid-item">
+                <label for="txtApellido">Apellido</label>
+                <input type="text" class="form-control" name="txtApellido" id="txtApellido"><br>
+            </div>
+            <div class="grid-item">
+                <label for="txtEmail">Email</label>
+                <input type="text" class="form-control" name="txtEmail" id="txtEmail"> <br>
+            </div>
+            <div class="grid-item">
+                <label for="txtCV">CV Link:</label>
+                <input type="text" class="form-control" name="txtCV" id="txtCV"> <br>
+            </div>
+            <div class="grid-item" id="area1">
+                <div class="grid-item">
+                    <input type="radio" name="area" id="acr" value="Area comercial">
+                    <label for="acr">Area comercial</label>
+                </div>
+                <div class="grid-item">
+                    <input type="radio" name="area" id="aidr" value="Area de I+D">
+                    <label for="aidr">Area de investigación y desarrollo</label>
+                </div>
+                <div class="grid-item">
+                    <input type="radio" name="area" id="adr" value="Area de diseño">
+                    <label for="adr">Area de diseño</label>
+                </div>
+                <div class="grid-item">
+                    <input type="radio" name="area" id="aer" value="Area de ensamble">
+                    <label for="aer">Area de ensamble</label>
+                </div>
+            </div>
+            <div class="button">
+                <button type="button" id="btn1" onclick="guardar();">Subir</button>
+            </div>
+        </form>
+    </section>
+    <section id="s5" style="display: none;"></section>
+    <div id="gire">
+        Gire el dispositivo para tener una mejor experiencia
+    </div>
+</body>
+<script src="/templates/js/app/main.js"></script>
+<script src="/templates/js/app/RRHH.js"></script>
+<script src="/templates/js/app/appFormRRHH.js"></script>
+<script src="/templates/js/data/datapuesto.json"></script>
+<script src="/templates/js/app/appForm2RRHH.js"></script>
+<script src="/templates/js/app/create.js"></script>
+
+</html>
