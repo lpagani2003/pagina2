@@ -1,4 +1,4 @@
-from flask import Flask ,jsonify ,request
+from flask import Flask ,jsonify,request
 # del modulo flask importar la clase Flask y los métodos jsonify,request
 from flask_cors import CORS       # del modulo flask_cors importar CORS
 from flask_sqlalchemy import SQLAlchemy
