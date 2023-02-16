@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(19, 25, 31);
+    overflow-x: hidden;
+}
+
+#login-form {
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    font-family: 'pirulen';
+    width: 50%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+}
+
+#login-form h1 {
+    padding-top: 25px;
+}
+
+#login-form div {
+    margin: auto;
+    height: 50%;
+}
+
+label {
+    cursor: pointer;
+}
+
+#login-form-submit {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'pirulen';
+}
+
+#login-form-submit:hover {
+    background-color: #ffffff;
+    border: 3px solid red;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'pirulen';
+}

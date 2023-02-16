@@ -47,7 +47,7 @@ async function postulante(id) {
                 <input type="text" class="form-control" name="txtCV2" id="txtCV2"> <br>
               </div>
             
-              <input type="checkbox" name="puesto" id="${item.id}" value="${item.puesto}" style="display: none;" checked>
+              <input type="checkbox" name="puesto" id="txtPuesto" value="${item.puesto}" style="display: none;" checked>
               <div id="button-aplicar">
                 <button type="button" class="btn" onclick="guardar2()">Aplicar</button>
               </div>
@@ -73,14 +73,14 @@ function guardar2() {
     let apellido2 = document.getElementById("txtApellido2").value
     let email2 = document.getElementById("txtEmail2").value
     let cv2 = document.getElementById("txtCV2").value
-    let area2 = document.getElementById("txtArea2").value
+    let puesto = document.getElementById("txtPuesto").value
     
     let postulantes = {
         nombre: nombre2,
         apellido: apellido2,
         email: email2,
         cv: cv2,
-        area: area2,
+        puesto: puesto,
         estado: 0,
         anotaciones: ""
     }

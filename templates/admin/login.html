@@ -2,35 +2,46 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoginAdmin</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/templates/CSS/apps/login.css">
+  <link rel="stylesheet" href="/templates/CSS/apps/particles.css">
+  <link rel="shortcut icon" href="/templates/images/src/PAG2.png" type="image/x-icon">
+  <title>Login</title>
 </head>
 
 <body>
-    <div class="container">
-        <form>
-            <label for="username">Username:</label>
-            <input type="text" id="username">
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password">
-            <br>
-            <button onclick="login()">Login</button>
-        </form>
-    </div>
+  <div id="particles-js">
+  </div>
+  <main>
+    <header>
+
+    </header>
+   
+    <section id="s0">
+      <form id="login-form">
+        <div>
+          <h1>Inicio de sesión <br> base de datos</h1>
+        </div>
+        <div>
+          <label for="username-field">Usuario</label><br>
+          <input type="text" name="username" id="username-field" class="login-form-field">
+        </div>
+        <div>
+          <label for="username-field">Contraseña</label><br>
+          <input type="password" name="password" id="password-field" class="login-form-field">
+        </div>
+        <div>
+          <input type="submit" value="Login" id="login-form-submit">
+        </div>
+      </form>
+    </section>
+  </main>
 </body>
-<script>
-   function login() {
-      let username = document.getElementById("username").value;
-      let password = document.getElementById("password").value;
-      if (username === "admin" && password === "1234") {
-        location.href = "https://www.google.com.ar/";
-      } else {
-        alert("Incorrect username or password");
-      }
-    }
-</script>
+<script src="/templates/js/app/login.js"></script>
+<script src="/templates/js/app/main.js"></script>
+<script src="/templates/js/app/particles.min.js"></script>
+<script src="/templates/js/app/appParticles.js"></script>
 
 </html>

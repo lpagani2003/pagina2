@@ -43,7 +43,7 @@ function modificar() {
     fetch(url, options)
         .then(function () {
             alert("Registro modificado")
-            window.location.href = "/templates/admin/admin.html";  //NUEVO  
+            window.location.href = "/templates/admin/admin1.html";  //NUEVO  
             // Handle response we get from the API
         })
         .catch(err => {

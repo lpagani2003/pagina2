@@ -1,166 +1,215 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- 
-}
-body{
-    background-image: url(/templates/images/src/Texture-Formato-1920x4000-2.png);
-    overflow-x: hidden;
-    font-family: 'pirulen';
-    
-}
-#s0{
-    margin: 80px auto;
-    
-}
-table{
-    width: 100%;
-    border-collapse: collapse;
-}
-th{
-    text-align: center;
-    padding: 5px;
-    color: black;
-    background-color: white;
-    font-family: 'pirulen';
-    font-weight: 2vw;
-}
-.producto{
-    width: 50%;
-}
-.cantidad{
-    width: 25%;
-}
-.cantidad1{
-    position: relative;
-    left: 5%;
-}
-.subtotal{
-    width: 25%;
-}
-#tbody{
-    background-color: rgba(255, 255, 255, 0.287);
-    color: white;
-    height: auto;
-    
-}
-.producto-info{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    height: 17.7vh;
-}
-.producto-info div{
-    position: relative;
-    top: 50px;
-    width: 70%;
-    padding-left: 20px;
-}
-.producto-info img{
-    height: 170px;
-}
-div p,small{
-    font-size: 1vw;
-}
-div a{
-    text-decoration: none;
-    color: #ff0000;
 }
 
-#costo-total{
-    display: flex;
-    justify-content: flex-end;
-    color: white;
-}
-#costo-total>table{
-    border-top: 5px solid rgb(255, 0, 0);
-    width: 100%;
-    
-}
-td{
-    padding-left: 150px;
-}
-td:last-child{
-    text-align: right;
-    padding-right: 150px;
-}
-th:last-child{
-    text-align: right;
-    padding-right: 150px;
-}
-button{
-    position: relative;
-    margin: 100px 100px 100px 100px;
-    left: 40%;
-    background-color: #ff0000;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    font-family: 'pirulen';
-}
-button a{
-    color: white;
-    text-decoration: none;
-}
-#s1{
-    width: 80vw;
-    height: 30vh;
-    background-color: rgb(193, 193, 193);
-    position: absolute;
-    top: 35%;
-    left: 10%;
-    font-family: 'pirulen';
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-    box-shadow: 20px 20px 50px 15px rgb(0, 0, 0);
-}
-#s1 p{
-    width: 90%;
-    position: relative;
-    left: 5%;
-    top: 20px;
-    font-size: 1vw;
-    text-align: justify;
-}
-#s1 .cliente{
-    position: relative;
-    left: 10%;
-    top: 45px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 1.2vw;
-}
-#cliente{
-    width: 65%;
-    height: 25px;
-    position: relative;
-    top: -4px;
-}
-#s1 .correo{
-    position: relative;
-    left: 10%;
-    top: 25px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 1.2vw;
-}
-#correo{
-    width: 65%;
-    height: 25px;
-    position: relative;
-    top: -4px;
-}
+@media only screen and (min-width: 1440px) {
+    body {
+        background-image: url(/templates/images/src/Texture-Formato-1920x4000-2.png);
+        overflow-x: hidden;
+        font-family: 'pirulen';
 
+    }
 
+    #s0 {
+        margin: 80px auto;
+
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th {
+        text-align: center;
+        padding: 5px;
+        color: black;
+        background-color: white;
+        font-family: 'pirulen';
+        font-weight: 2vw;
+    }
+
+    .producto {
+        width: 50%;
+    }
+
+    .cantidad {
+        width: 25%;
+    }
+
+    .cantidad1 {
+        position: relative;
+        left: 5%;
+    }
+
+    .subtotal {
+        width: 25%;
+    }
+
+    #tbody {
+        background-color: rgba(255, 255, 255, 0.287);
+        color: white;
+        height: auto;
+
+    }
+
+    .producto-info {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        height: 17.7vh;
+    }
+
+    .producto-info div {
+        position: relative;
+        top: 50px;
+        width: 70%;
+        padding-left: 20px;
+    }
+
+    .producto-info img {
+        height: 170px;
+    }
+
+    div p,
+    small {
+        font-size: 1vw;
+    }
+
+    div a {
+        text-decoration: none;
+        color: #ff0000;
+    }
+
+    #costo-total {
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+    }
+
+    #costo-total>table {
+        border-top: 5px solid rgb(255, 0, 0);
+        width: 100%;
+
+    }
+
+    td {
+        padding-left: 150px;
+    }
+
+    td:last-child {
+        text-align: right;
+        padding-right: 150px;
+    }
+
+    th:last-child {
+        text-align: right;
+        padding-right: 150px;
+    }
+
+    button {
+        position: relative;
+        margin: 100px 100px 100px 100px;
+        left: 40%;
+        background-color: #ff0000;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-family: 'pirulen';
+    }
+
+    button a {
+        color: white;
+        text-decoration: none;
+    }
+
+    #s1 {
+        width: 80vw;
+        height: 30vh;
+        background-color: rgb(193, 193, 193);
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        font-family: 'pirulen';
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        box-shadow: 20px 20px 50px 15px rgb(0, 0, 0);
+    }
+
+    #s1 p {
+        width: 90%;
+        position: relative;
+        left: 5%;
+        top: 20px;
+        font-size: 1vw;
+        text-align: justify;
+    }
+
+    #s1 .cliente {
+        position: relative;
+        left: 10%;
+        top: 45px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 1.2vw;
+    }
+
+    #persona {
+        width: 65%;
+        height: 25px;
+        position: relative;
+        top: -4px;
+    }
+
+    #s1 .correo {
+        position: relative;
+        left: 10%;
+        top: 25px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 1.2vw;
+    }
+
+    #correo {
+        width: 65%;
+        height: 25px;
+        position: relative;
+        top: -4px;
+    }
+
+    #button{
+        position: absolute;
+        left: 40%;
+        bottom: 10%;
+        background-color: #ff0000;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-family: 'pirulen';
+    }
+    h1{
+        position: relative;
+        left: 22%;
+        top: 20px;
+    }
+}
