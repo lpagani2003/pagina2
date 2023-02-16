@@ -1,6 +1,7 @@
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
+const invitado = document.getElementById("button")
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -19,3 +20,7 @@ loginButton.addEventListener("click", (e) => {
         }
     }
 });
+invitado.addEventListener("click", (e) =>{
+    e.preventDefault();
+    location.href = "/templates/admin/admin2.html";
+})
