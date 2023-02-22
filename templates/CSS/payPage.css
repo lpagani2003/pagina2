@@ -13,7 +13,7 @@
     }
 
     #s0 {
-        margin: 80px auto;
+        width: 100vw;
 
     }
 
@@ -31,47 +31,68 @@
         font-weight: 2vw;
     }
 
+    #tbody td {
+        padding-top: 10px;
+    }
+
+    td {
+        padding-top: 10px;
+    }
+
+    .producto1 {
+        width: 50%;
+    }
+
+    .cantidad1 {
+        width: 25%;
+        text-align: center;
+    }
+
+    .subtotal1 {
+        width: 25%;
+        text-align: center;
+    }
+
     .producto {
         width: 50%;
+        color: rgb(255, 255, 255);
     }
 
     .cantidad {
         width: 25%;
-    }
-
-    .cantidad1 {
-        position: relative;
-        left: 5%;
+        text-align: center;
+        color: rgb(255, 255, 255);
     }
 
     .subtotal {
         width: 25%;
+        text-align: center;
+        color: rgb(255, 255, 255);
     }
 
-    #tbody {
-        background-color: rgba(255, 255, 255, 0.287);
-        color: white;
-        height: auto;
-
+    #scrolling {
+        max-height: 70vh;
+        overflow-y: scroll;
+        background-color: rgba(191, 191, 191, 0.492);
     }
 
     .producto-info {
         display: flex;
-        flex-wrap: wrap;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        height: 17.7vh;
+        justify-content: left;
+        align-items: flex-start;
+        max-width: 50vw;
     }
 
     .producto-info div {
         position: relative;
         top: 50px;
-        width: 70%;
-        padding-left: 20px;
+        width: 60%;
     }
 
     .producto-info img {
-        height: 170px;
+        max-height: 20vh;
+        max-width: 20vw;
+        margin: auto;
     }
 
     div p,
@@ -79,41 +100,23 @@
         font-size: 1vw;
     }
 
-    div a {
-        text-decoration: none;
-        color: #ff0000;
-    }
-
     #costo-total {
-        display: flex;
-        justify-content: flex-end;
         color: white;
-    }
-
-    #costo-total>table {
-        border-top: 5px solid rgb(255, 0, 0);
-        width: 100%;
-
-    }
-
-    td {
-        padding-left: 150px;
-    }
-
-    td:last-child {
         text-align: right;
-        padding-right: 150px;
+        border-top: 5px solid #ff0000;
+        padding-right: 10%;
     }
 
-    th:last-child {
-        text-align: right;
-        padding-right: 150px;
+    #botones {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding-top: 10px;
     }
 
     button {
-        position: relative;
-        margin: 100px 100px 100px 100px;
-        left: 40%;
         background-color: #ff0000;
         border: none;
         color: white;
@@ -122,7 +125,7 @@
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        margin: 4px 2px;
+
         transition-duration: 0.4s;
         cursor: pointer;
         font-family: 'pirulen';
@@ -135,7 +138,6 @@
 
     #s1 {
         width: 80vw;
-        height: 30vh;
         background-color: rgb(193, 193, 193);
         position: absolute;
         top: 35%;
@@ -151,20 +153,17 @@
 
     #s1 p {
         width: 90%;
-        position: relative;
-        left: 5%;
-        top: 20px;
+        padding-top: 20px;
+        margin: auto;
         font-size: 1vw;
         text-align: justify;
     }
 
-    #s1 .cliente {
-        position: relative;
-        left: 10%;
-        top: 45px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        font-size: 1.2vw;
+    .cliente {
+        padding-top: 20px;
+        padding-left: 15%;
+        margin: auto;
+        font-size: 1vw;
     }
 
     #persona {
@@ -174,13 +173,11 @@
         top: -4px;
     }
 
-    #s1 .correo {
-        position: relative;
-        left: 10%;
-        top: 25px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        font-size: 1.2vw;
+    .correo {
+        padding-top: 20px;
+        padding-left: 15%;
+        margin: auto;
+        font-size: 1vw;
     }
 
     #correo {
@@ -190,10 +187,15 @@
         top: -4px;
     }
 
-    #button{
-        position: absolute;
-        left: 40%;
-        bottom: 10%;
+    .button {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 25px;
+    }
+
+    #button {
         background-color: #ff0000;
         border: none;
         color: white;
@@ -202,14 +204,214 @@
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        margin: 4px 2px;
         transition-duration: 0.4s;
         cursor: pointer;
         font-family: 'pirulen';
     }
-    h1{
-        position: relative;
-        left: 22%;
-        top: 20px;
+
+}
+
+@media only screen and (max-width: 1439px) {
+    body {
+        background-image: url(/templates/images/src/Texture-Formato-1920x4000-2.png);
+        overflow-x: hidden;
+        font-family: 'pirulen';
+
     }
+
+    #s0 {
+        width: 100vw;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th {
+        text-align: center;
+        padding: 5px;
+        color: black;
+        background-color: white;
+        font-family: 'pirulen';
+        font-weight: 2vw;
+    }
+
+    #tbody td {
+        padding-top: 40px;
+    }
+
+    td {
+        padding-top: 10px;
+    }
+
+    .producto1 {
+        width: 50%;
+
+    }
+
+    .cantidad1 {
+        width: 25%;
+        text-align: center;
+
+    }
+
+    .subtotal1 {
+        width: 25%;
+        text-align: center;
+
+    }
+
+    .producto {
+        width: 50%;
+        color: rgb(255, 255, 255);
+    }
+
+    .cantidad {
+        width: 25%;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+
+    .subtotal {
+        width: 25%;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+
+    #scrolling {
+        max-height: 70vh;
+        overflow-y: scroll;
+        background-color: rgba(191, 191, 191, 0.492);
+    }
+
+    .producto-info {
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        max-width: 50vw;
+    }
+
+    .producto-info img {
+        max-height: 20vh;
+        max-width: 20vw;
+        margin: auto;
+    }
+
+    .producto-info div {
+        margin: auto;
+        max-width: 90%;
+        color: white;
+    }
+
+    #costo-total {
+        color: white;
+        text-align: right;
+        border-top: 5px solid #ff0000;
+        padding-right: 2%;
+    }
+
+    #botones {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding-top: 10px;
+    }
+
+    button {
+        background-color: #ff0000;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-family: 'pirulen';
+    }
+
+    button a {
+        color: white;
+        text-decoration: none;
+    }
+
+    #s1 {
+        width: 90vw;
+
+        background-color: rgb(193, 193, 193);
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        font-family: 'pirulen';
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        box-shadow: 20px 20px 50px 15px rgb(0, 0, 0);
+    }
+
+    #s1 p {
+        width: 90%;
+        padding-top: 20px;
+        margin: auto;
+        font-size: 3vw;
+        text-align: justify;
+    }
+
+    .cliente {
+        padding-top: 20px;
+        padding-left: 5%;
+        margin: auto;
+        font-size: 3vw;
+    }
+
+    #persona {
+        width: 65%;
+        height: 25px;
+        position: relative;
+        top: -4px;
+    }
+
+    .correo {
+        padding-top: 20px;
+        padding-left: 5%;
+        margin: auto;
+        font-size: 3vw;
+    }
+
+    #correo {
+        width: 65%;
+        height: 25px;
+        position: relative;
+        top: -4px;
+    }
+
+    .button {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 25px;
+    }
+
+    #button {
+        background-color: #ff0000;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-family: 'pirulen';
+    }
+
 }

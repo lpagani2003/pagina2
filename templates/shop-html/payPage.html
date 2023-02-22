@@ -12,20 +12,22 @@
 </head>
 
 <body>
+    <header></header>
     <section id="s0">
         <table>
             <tr>
-                <th class="producto">Producto</th>
-                <th class="cantidad">Cantidad</th>
-                <th class="subtotal">Subtotal</th>
+                <th class="producto1">Producto</th>
+                <th class="cantidad1">Cantidad</th>
+                <th class="subtotal1">Subtotal</th>
             </tr>
         </table>
         <button id="activarFuncion" style="display: none;">Procesar pedido</button>
+        <div id="scrolling">
+            <table id="tbody">
 
-        <table id="tbody">
 
-
-        </table>
+            </table>
+        </div>
         <div id="costo-total">
             <table>
                 <tr>
@@ -42,13 +44,16 @@
                 </tr>
             </table>
         </div>
-        <button id="pagar" onclick="togglePopup('s1');">Pagar</button>
-        <button id="seguir-comprando"><a href="/templates/shop.html">Seguir comprando</a></button>
+        <div id="botones">
+            <button id="pagar" onclick="togglePopup('s1');">Pagar</button>
+            <button id="seguir-comprando"><a href="/templates/shop.html">Seguir comprando</a></button>
+        </div>
+        
     </section>
     <section id="s1" style="display: none;">
         <form id="procesar-pago" method="post">
-            <p>Ingrese su nombre y correo a fin de que nos quede registrado como cliente y le podamos enviar su orden de
-                compra</p>
+            <p style="text-align: center;">Ingrese su nombre y correo a fin de que nos quede registrado como cliente y le podamos enviar su orden de
+                compra para que posteriormente le enviemos la factura con el link de pago</p>
             <div class="cliente">
                 <label for="cliente">Cliente :</label>
                 <input type="text" name="persona" id="persona" placeholder="Ingresa Nombre del cliente">
@@ -58,11 +63,12 @@
                 <textarea name="message" id="message" cols="1000" rows="1000"></textarea>
             </div><br>
             <div class="correo">
-                <label for="email">Correo :</label>
-                <input type="email" name="email.id" id="correo" id="email.id">
+                <label for="reply_to">Correo :</label>
+                <input type="text" name="reply_to" id="correo" id="reply_to">
             </div><br>
-
-            <input type="submit" value="enviar" id="button">
+            <div class="button">
+                <input type="submit" value="enviar" id="button">
+            </div>
         </form>
 
     </section>

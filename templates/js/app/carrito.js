@@ -65,33 +65,33 @@ const mostrarCarrito = () => {
     const modalBody = document.querySelector('.modal-body')
     if (modalBody) {
         modalBody.innerHTML = `
-    <tr id="first-row">
-        <th>Producto</th>
-        <th>Cantidad</th>
-        <th>Precio</th>
-    </tr>`
+            <tr id="first-row">
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+            </tr>`
         carrito.forEach((prod) => {
             const { id, name, type, price, image, cantidad } = prod
             modalBody.innerHTML += `
-        <tr>
-            <th id="info-producto">
-                <div>
-                    <img class="img-carrito" src="${image}" />
-                </div>
-                <div class="info-producto">
-                    <p>${type} <br> ${name}</p>
+            <tr>
+                <th class="producto">
+                    <div class="img-carrito1">
+                        <img class="img-carrito" src="${image}" />
+                    </div>
+                    <div class="info-producto">
+                        <p>${type} <br> ${name}</p>
 
-                    <a href="" onclick="eliminarProducto(${id})">Quitar</a>
-                </div>
-            </th>
-            <th class="numeros">
-                <p> ${cantidad}</p>
-            </th>
-            <th class="numeros">
-                <p>$ ${price * cantidad}</p>
-            </th>
-        </tr>
-        `
+                        <a href="" onclick="eliminarProducto(event,${id})">Quitar</a>
+                    </div>
+                </th>
+                <th class="numeros">
+                    <p> ${cantidad}</p>
+                </th>
+                <th class="numeros">
+                    <p>$ ${price * cantidad}</p>
+                </th>
+            </tr>
+            `
         })
     }
     if (carrito.length === 0) {
@@ -104,19 +104,19 @@ const mostrarCarrito = () => {
     }
     guardarStorage()
 };
-function eliminarProducto(id) {
-    const productoId = id
+function eliminarProducto(event, id) {
+    event.preventDefault();
+    const productoId = id;
     carrito = carrito.filter((producto) => producto.id !== productoId);
-    mostrarCarrito()
-
-};
+    mostrarCarrito();
+  };
 function guardarStorage() {
     localStorage.setItem("carrito", JSON.stringify(carrito))
 };
 function procesarPedido() {
     carrito.forEach((prod) => {
         const listaCompra = document.querySelector('#tbody')
-        const { id, name, type, price, image, cantidad } = prod
+        const {name, type, price, image, cantidad } = prod
         const row = document.createElement('tr')
         row.innerHTML += `
                 <td class="producto">
@@ -129,7 +129,7 @@ function procesarPedido() {
                         </div>
                     </div>
                 </td>
-                <td class="cantidad1">${cantidad}</td>
+                <td class="cantidad">${cantidad}</td>
                 <td class="subtotal">$${price * cantidad}</td>
         `
         listaCompra.appendChild(row)
@@ -166,6 +166,12 @@ function enviarPedido(e) {
             Precio subtotal: ${price * cantidad}\n
             ---------------------------------------------\n`;
         });
+        mensaje += `Subtotal: $${subtotalProceso.textContent}\n
+                    IVA: $${ivaProceso.textContent}\n
+                    Total: $${totalProceso.textContent}\n\n
+                    Datos del cliente:\n
+                    Nombre: ${cliente}\n
+                    Correo: ${correo}\n`;
         console.log(mensaje)
         messageInput.value = mensaje;
 
@@ -176,7 +182,7 @@ function enviarPedido(e) {
         btn.value = 'Enviando...';
 
         const serviceID = 'default_service';
-        const templateID = 'template_0s3ti34';
+        const templateID = 'template_iswgbnc';
 
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
@@ -194,14 +200,16 @@ function enviarPedido(e) {
         formulario.reset()
     }, 3000)
 
-    const alertExito = document.createElement('h1')
-    alertExito.textContent = "Compra realizada correctamente"
-    formulario.appendChild(alertExito)
-
-    // setTimeout(() => {
-    //     alertExito.remove()
-    //     location.href = "/templates/shop.html"
-    // }, 3000)
+    alert("Compra realizada correctamente")
+    setTimeout(() => {
+        
+        location.href = "/templates/shop.html"
+        localStorage.removeItem("carrito");
+        carrito = [];
+        mostrarCarrito();
+        
+    }, 3000)
+    
 }
 
 

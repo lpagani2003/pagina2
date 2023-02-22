@@ -28,6 +28,22 @@
         justify-content: center;
         border-bottom: 5px solid red;
     }
+    .contentdiv{
+        height: 50vw;
+        width: 100%;
+    }
+    .contentdiv img {
+        height: 100%;
+        width: 100%;
+        background-size: 80%;
+        background-position-y: center;
+        background-position-x: center;
+    }
+    canvas{
+        height: 100%;
+        width: 100%;
+    }
+
 
     h2 {
         font-family: 'Pirulen';
@@ -78,7 +94,7 @@
     .tarjeta {
         background-color: white;
         width: 40%;
-        height: 50vh;
+        /* height: 50vh; */
         text-align: center;
         font-family: 'pirulen';
         border-radius: 15%;
@@ -93,6 +109,7 @@
 
     .tarjeta>img {
         max-height: 50%;
+        max-width: 100%;
         padding-top: 10px;
         margin: auto;
     }
@@ -103,7 +120,7 @@
         font-size: 2.5vw;
     }
 
-    a {
+    .cuerpo a {
         color: black;
         font-size: 2vw;
     }
@@ -116,6 +133,7 @@
         text-decoration: none;
     }
     .cuerpo .btn{
+        width: 80%;
         background-color: #ff0000;
         border: none;
         color: white;
@@ -149,6 +167,17 @@
         background-image: url(/templates/images/src/Texture-Formato-1920x4000-2.png);
         overflow-x: hidden;
 
+    }
+    .contentdiv{
+        height: 75vh;
+        width: 100%;
+    }
+    .contentdiv img {
+        height: 75vh;
+        width: 100%;
+        background-size: 80%;
+        background-position-y: center;
+        background-position-x: center;
     }
 
     #s0 {
@@ -223,7 +252,7 @@
         -o-border-radius: 15%;
     }
 
-    .tarjeta>img {
+    .tarjeta img {
         max-height: 40vh;
         padding-top: 10px;
         margin: auto;
@@ -231,12 +260,12 @@
     .cuerpo{
         padding-bottom: 15px;
     }
-    h4 {
+    .cuerpo h4 {
         width: 100%;
         font-size: 1.5vw;
     }
 
-    a {
+    .cuerpo a {
         color: black;
         font-size: 1vw;
     }
@@ -286,12 +315,27 @@
 
     #s0 {
         width: 100%;
-        height: 55vh;
+        height: 60vw;
         src: url(/templates/CSS/pirulen\ rg.otf);
         text-align: center;
         font-family: 'Pirulen';
         margin: auto;
         padding: 0;
+    }
+    .contentdiv{
+        height: 25vh;
+        width: 100%;
+    }
+    .contentdiv img {
+        height: 100%;
+        width: 100%;
+        background-size: 80%;
+        background-position-y: center;
+        background-position-x: center;
+    }
+    canvas{
+        height: 25vh;
+        width: 100%;
     }
 
     #s1 {
@@ -365,7 +409,7 @@
         font-size: 4.5vw;
     }
 
-    a {
+    .cuerpo a {
         color: black;
         font-size: 5vw;
     }

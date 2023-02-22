@@ -75,6 +75,10 @@ function guardar2() {
     let cv2 = document.getElementById("txtCV2").value
     let puesto = document.getElementById("txtPuesto").value
     
+    if (nombre2 === '' || apellido2 === '' || email2 === '' || cv2 === '') {
+
+        alert("Complete los campos requeridos")
+    }else{
     let postulantes = {
         nombre: nombre2,
         apellido: apellido2,
@@ -103,3 +107,4 @@ function guardar2() {
             console.error(err);
         })
     }
+  }

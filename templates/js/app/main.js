@@ -12,7 +12,6 @@ cad=`
                     <a href="/templates/Shop.html"><li>Shop</li></a>
                     <a href="/templates/admin/login.html"><li>Base de datos</li></a>
                     <div id="end">
-                        <h6>Contacto</h6>
                         <a href="https://www.instagram.com/pagani.design_/" id="" target="_blank"><img src="/templates/images/src/Instagram_logo_2022.svg.webp" alt="Instagram"></a>
                         <a href="" id="" target="_blank"><img src="/templates/images/src/Gmail_icon_(2020).svg.webp" alt="Email"></a>
                     </div>
