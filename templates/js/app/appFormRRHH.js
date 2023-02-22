@@ -19,9 +19,9 @@ function guardar1() {
         estado: 0,
         anotaciones: ""
     }
-    let url = "http://localhost:5000/pasantes"
+    let url = "http://lpagani2003.pythonanywhere.com/pasantes"
     var options = {
-        body: JSON.stringify(pasantes),
+        body: JSON.stringify(pasantes), 
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         // redirect: 'follow'
@@ -37,6 +37,5 @@ function guardar1() {
             alert("Error al grabar")
             console.error(err);
         })
-    //window.location.href = "./index.html";  //NUEVO    
-
-}
+    }
+  

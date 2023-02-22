@@ -7,7 +7,7 @@ if (document.getElementById("app1")) {
                 pasantes: [],
                 errored: false,
                 loading: true,
-                url: "http://localhost:5000/pasantes"
+                url: "http://lpagani2003.pythonanywhere.com/pasantes"
                 }
         },
         methods: {
@@ -23,7 +23,7 @@ if (document.getElementById("app1")) {
                     })
             },
             eliminar(pasante) {
-                const url = 'http://localhost:5000/pasantes/' + pasante;
+                const url = 'http://lpagani2003.pythonanywhere.com/pasantes/' + pasante;
                 var options = {
                     method: 'DELETE',
                 }
@@ -48,7 +48,7 @@ if (document.getElementById("app2")) {
                 postulantes: [],
                 errored: false,
                 loading: true,
-                url: "http://localhost:5000/postulantes"
+                url: "http://lpagani2003.pythonanywhere.com/postulantes"
                 }
         },
         methods: {
@@ -64,7 +64,7 @@ if (document.getElementById("app2")) {
                     })
             },
             eliminar(postulante) {
-                const url = 'http://localhost:5000/postulantes/' + postulante;
+                const url = 'http://lpagani2003.pythonanywhere.com/postulantes' + postulante;
                 var options = {
                     method: 'DELETE',
                 }

@@ -33,7 +33,7 @@ function modificar() {
         estado: est,
         anotaciones: anot
     }
-    let url = "http://localhost:5000/postulantes/"+id
+    let url = "http://lpagani2003.pythonanywhere.com/postulantes/"+id
     var options = {
         body: JSON.stringify(postulante),
         method: 'PUT',
