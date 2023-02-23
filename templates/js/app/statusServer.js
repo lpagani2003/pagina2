@@ -6,11 +6,11 @@ const color = document.getElementById('color')
 fetch("http://lpagani2003.pythonanywhere.com/pasantes")
   .then(response => {
     // Si la respuesta es exitosa, actualiza el estado de la conexión
-    connectionStatus.textContent = 'Estable';
+    connectionStatus.textContent = 'Servidor en linea';
     color.classList.add('online');
   })
   .catch(error => {
     // Si hay un error, actualiza el estado de la conexión
-    connectionStatus.textContent = 'Fuera de línea';
+    connectionStatus.textContent = 'Servidor fuera de línea';
     color.classList.add('offline');
   });
