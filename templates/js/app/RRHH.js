@@ -1,3 +1,29 @@
+const elements = document.querySelectorAll('section');
+
+  // Función para ocultar o mostrar los elementos según el ancho de la pantalla
+  const toggleElementsVisibility = () => {
+    // Obtiene el ancho de la pantalla
+    const screenWidth = window.innerWidth;
+
+    // Si la pantalla es menor que cierto ancho, oculta todos los elementos
+    if (screenWidth < 610) {
+      elements.forEach(element => {
+        element.classList.add('hide');
+      });
+    } else {
+      // Si la pantalla es mayor o igual que cierto ancho, muestra todos los elementos
+      elements.forEach(element => {
+        element.classList.remove('hide');
+      });
+    }
+  };
+
+  // Llama a la función al cargar la página y cada vez que se redimensione la pantalla
+  toggleElementsVisibility();
+  window.addEventListener('resize', toggleElementsVisibility);
+
+
+
 function before() {
   var radio = document.getElementById("ppa");
   var div1 = document.getElementById("s2");

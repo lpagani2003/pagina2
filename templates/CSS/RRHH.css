@@ -284,6 +284,46 @@
         cursor: pointer;
         font-family: 'pirulen';
     }
+
+    #s6 {
+        background-color: rgb(116, 116, 116);
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px 0px 10px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+}
+
+    #connection-status {
+        padding: 10px 10px 10px 10px;
+    }
+
+    #color {
+        height: 50%;
+        padding: 10px 10px 10px 10px;
+        border-radius: 5px;
+        color: #fff;
+        border-radius: 100px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+
+    #color.online {
+        background-color: green;
+    }
+
+    #color.offline {
+        background-color: red;
+    }
 }
 
 @media only screen and (max-width: 1439px) {
@@ -572,12 +612,49 @@
         cursor: pointer;
         font-family: 'pirulen';
     }
+    #s6 {
+        background-color: rgb(116, 116, 116);
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px 0px 10px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+}
+
+    #connection-status {
+        padding: 10px 10px 10px 10px;
+    }
+
+    #color {
+        height: 50%;
+        padding: 10px 10px 10px 10px;
+        border-radius: 5px;
+        color: #fff;
+        border-radius: 100px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+
+    #color.online {
+        background-color: green;
+    }
+
+    #color.offline {
+        background-color: red;
+    }
 }
 
 @media only screen and (max-width: 610px) {
-    #s1 {
-        display: none;
-    }
+
 
     body {
         background-color: rgb(19, 25, 31);
@@ -591,4 +668,9 @@
         color: white;
         text-align: center;
     }
+  
+    .hide {
+        display: none !important;
+      }
+
 }
